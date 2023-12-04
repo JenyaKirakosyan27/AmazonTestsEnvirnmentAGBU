@@ -18,16 +18,15 @@ def logger(level, message, fileName=os.path.join(get_root_dir_name(), '_logs_', 
                         datefmt="%d-%m-%Y %H:%M:%S")
     if level == "INFO":
         logging.info(f"{level}: {message}")
-        print(f"{level}: {message}")
+
     elif level == "DEBUG":
         logging.debug(f"{level}: {message}")
-        print(f"{level}: {message}")
+
     elif level == "WARNING":
         logging.warning(f"{level}: {message}")
-        print(f"{level}: {message}")
+
     elif level == "ERROR":
         logging.error(f"{level}: {message}")
-        print(f"{level}: {message}")
+
     elif level == "CRITICAL":
         logging.critical(f"{level}: {message}")
-        print(f"{level}: {message}")
